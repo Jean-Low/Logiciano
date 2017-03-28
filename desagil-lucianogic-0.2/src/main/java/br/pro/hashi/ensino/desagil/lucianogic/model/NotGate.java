@@ -3,10 +3,13 @@ package br.pro.hashi.ensino.desagil.lucianogic.model;
 public class NotGate extends Gate {
 	private NandGate nandGate;
 
+
 	public NotGate() {
-		super(1);
+		super(1,"Not");
 		nandGate = new NandGate();
 	}
+	
+	
 
 	@Override
 	public boolean read() {
